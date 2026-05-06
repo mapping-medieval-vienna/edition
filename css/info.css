@@ -118,6 +118,30 @@
 }
 #info-content th { background: #ece8e0; font-weight: 600; }
 
+/* ── Rück-Link neben H1 ── */
+.page-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--col-border);
+}
+#info-content .page-title-row h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.page-title-row a {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--col-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* ── WIP notice ── */
 .wip-notice {
   color: var(--col-muted);

@@ -152,6 +152,22 @@ function loadPage(p) {
           return `<h${depth} id="${id}">${text}</h${depth}>\n`;
         };
         content.innerHTML = marked.parse(md, { renderer });
+
+        // Rück-Link neben H1 setzen
+        const h1 = content.querySelector('h1');
+        const firstP = h1 && h1.previousElementSibling &&
+                       h1.previousElementSibling.tagName === 'P'
+                       ? h1.previousElementSibling
+                       : content.querySelector('p:first-of-type');
+        if (firstP && h1 && firstP.children.length === 1 && firstP.querySelector('a')) {
+          const backLink = firstP.querySelector('a');
+          const wrapper = document.createElement('div');
+          wrapper.className = 'page-title-row';
+          h1.parentNode.insertBefore(wrapper, h1);
+          wrapper.appendChild(h1);
+          wrapper.appendChild(backLink);
+          firstP.remove();
+        }
       }
 
       // Scroll to hash anchor after content is in the DOM
