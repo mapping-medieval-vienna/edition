@@ -1,6 +1,6 @@
 # Häuser
 
-Wir sind dabei, die Häuserbiografien mit einem Skript zu erstellen. Erste Beispiele aus der Wiltwerkerstraße:
+Wir sind dabei, die Häuserbiografien mit einem Skript aus unsereren Arbeits-Spreadsheets in das Repository zu übertragen. Erste Beispiele aus der Wiltwerkerstraße:
 
 [DB1020](info.html?p=daten/haeuser/biografien/DB1020)
 
@@ -13,4 +13,8 @@ Wir sind dabei, die Häuserbiografien mit einem Skript zu erstellen. Erste Beisp
 [DB5205](info.html?p=daten/haeuser/biografien/DB5205)
 
 [DB5207](info.html?p=daten/haeuser/biografien/DB5207)
+
+Eine vollständige Liste aller bisher übertragenenen Hausbiografien ist hier:
+
+https://github.com/mapping-medieval-vienna/daten/tree/main/haeuser
 
