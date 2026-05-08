@@ -13,8 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   initOSD();
 
   const params = new URLSearchParams(location.search);
-  const edition = params.get("e");
-  if (!edition) { showStatus("Keine Edition angegeben (URL-Parameter ?e= fehlt)."); return; }
+
+  // Support ?entry=GB-E-0015-2 (edition derived from ID)
+  const entryParam = params.get("entry");
+  let edition = params.get("e");
+
+  if (!edition && entryParam) {
+    edition = editionFromEntryId(entryParam);
+  }
+  if (!edition) { showStatus("Keine Edition angegeben (URL-Parameter ?e= oder ?entry= fehlt)."); return; }
 
   const titles = {
     "KB-E":       "Kaufbuch E",
@@ -28,6 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("toggle-form");
   const labelLine = document.getElementById("toggle-label-line");
   const labelForm = document.getElementById("toggle-label-form");
+
+  // Set initial view from ?ansicht= parameter
+  const ansicht = params.get("ansicht");
+  if (ansicht === "formular") {
+    toggleBtn.setAttribute("aria-checked", "true");
+  } else if (ansicht === "zeilentreu") {
+    toggleBtn.setAttribute("aria-checked", "false");
+  }
 
   function updateToggleLabels() {
     const isForm = toggleBtn.getAttribute("aria-checked") === "true";
@@ -48,18 +63,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle browser back/forward
   window.addEventListener("hashchange", () => {
-    const n = location.hash.slice(1);
+    const n = decodeURIComponent(location.hash.slice(1));
     if (n) {
       const idx = pages.findIndex(p => p.n === n);
       if (idx >= 0 && idx !== currentPageIdx) showPage(idx, false);
     }
   });
 
-  loadEdition("data/" + edition + ".xml");
+  loadEdition("data/" + edition + ".xml", entryParam);
 });
 
+/* ── Derive edition key from entry ID ── */
+function editionFromEntryId(entryId) {
+  if (!entryId) return null;
+  if (entryId.startsWith("KB-E2-"))  return "KB-E2_GB-C";
+  if (entryId.startsWith("GB-C-"))   return "KB-E2_GB-C";
+  if (entryId.startsWith("KB-E-"))   return "KB-E";
+  if (entryId.startsWith("GB-D-"))   return "GB-D";
+  if (entryId.startsWith("GB-E-"))   return "GB-E";
+  return null;
+}
+
 /* ── Load & parse TEI ── */
-function loadEdition(url) {
+function loadEdition(url, targetEntryId) {
   showStatus("Lade Edition…");
   fetch(url)
     .then(r => {
@@ -73,13 +99,52 @@ function loadEdition(url) {
       if (err) throw new Error("XML-Fehler: " + err.textContent.slice(0, 200));
       buildPageIndex();
       renderNav();
-      // Start on page from hash, or first page
-      const hashN = location.hash.slice(1);
+
+      // ?entry= has priority over #hash
+      if (targetEntryId) {
+        const entryN = entryIdToN(targetEntryId);
+        const idx = pages.findIndex(p =>
+          p.entries.some(e => (e.entry.getAttribute("n") || "") === entryN)
+        );
+        if (idx >= 0) {
+          showPage(idx);
+          // Highlight the target entry after render
+          requestAnimationFrame(() => highlightEntry(entryN));
+          return;
+        }
+      }
+
+      // Fall back to #hash or first page
+      const hashN = decodeURIComponent(location.hash.slice(1));
       const startIdx = hashN ? Math.max(0, pages.findIndex(p => p.n === hashN)) : 0;
       showPage(startIdx);
     })
     .catch(e => showStatus("Fehler: " + e.message));
 }
+
+/* ── Convert full entry ID to the n= attribute value used in TEI ── */
+function entryIdToN(entryId) {
+  // "GB-E-0015-2" → "0015-2", "KB-E-073-5" → "073-5"
+  return entryId.replace(/^(?:KB-E2?|GB-[CDE])-/, "");
+}
+
+/* ── Briefly highlight a specific entry div ── */
+function highlightEntry(entryN) {
+  const pane = document.getElementById("transcript-pane");
+  // entry-head divs contain the entry ID as text
+  for (const head of pane.querySelectorAll(".entry-head")) {
+    if (head.textContent.trim() === entryN) {
+      const entryEl = head.closest(".entry");
+      if (entryEl) {
+        entryEl.scrollIntoView({ block: "start", behavior: "smooth" });
+        entryEl.classList.add("entry-highlight");
+        setTimeout(() => entryEl.classList.remove("entry-highlight"), 2000);
+      }
+      break;
+    }
+  }
+}
+
 
 /* ── Build page index via document-order traversal ── */
 function buildPageIndex() {
@@ -186,9 +251,16 @@ function showPage(idx, pushHash = true) {
   if (idx < 0 || idx >= pages.length) return;
   currentPageIdx = idx;
 
-  // Update hash without triggering hashchange handler loop
   if (pushHash) {
-    history.pushState(null, "", location.pathname + location.search + "#" + pages[idx].n);
+    const params = new URLSearchParams(location.search);
+    const edition = params.get("e") || editionFromEntryId(params.get("entry"));
+    // Only rewrite URL if user navigated explicitly (not the initial entry= jump)
+    if (params.get("e")) {
+      history.pushState(null, "", "viewer.html?e=" + edition + "#" + pages[idx].n);
+    } else {
+      // Keep entry= URL as-is on first load; subsequent clicks will have ?e= already
+      history.replaceState(null, "", "viewer.html?e=" + edition + "#" + pages[idx].n);
+    }
   }
 
   // Update nav highlight

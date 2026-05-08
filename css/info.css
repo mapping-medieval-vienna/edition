@@ -150,3 +150,32 @@
   font-style: italic;
   margin-top: 0.5rem;
 }
+
+/* ── Edition-Link neben Eintrags-Überschrift ── */
+.entry-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0.4rem;
+}
+.entry-heading h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.entry-edition-link {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--col-muted);
+  text-decoration: none;
+  border: 1px solid var(--col-border);
+  border-radius: 3px;
+  padding: 0.1em 0.45em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.entry-edition-link:hover {
+  background: var(--col-accent-light);
+  border-color: var(--col-accent);
+  color: var(--col-accent);
+}

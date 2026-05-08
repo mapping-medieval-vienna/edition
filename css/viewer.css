@@ -233,3 +233,14 @@
 .nav-btn:hover { background: var(--col-accent-light); border-color: var(--col-accent); }
 .nav-btn:disabled { opacity: 0.3; cursor: default; }
 .nav-btn:disabled:hover { background: none; border-color: var(--col-border); }
+
+/* ── Entry highlight (from ?entry= link) ── */
+@keyframes entry-flash {
+  0%   { background: var(--col-accent-light); }
+  70%  { background: var(--col-accent-light); }
+  100% { background: transparent; }
+}
+.entry-highlight {
+  animation: entry-flash 2s ease-out forwards;
+  border-radius: 3px;
+}

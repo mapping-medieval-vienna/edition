@@ -207,7 +207,7 @@ function renderResults(results, activeTerms = [], fuzzyTerms = []) {
     const card = document.createElement('div');
     card.className = 'result-card';
 
-    const viewerUrl = `viewer.html?e=${r.edition}#${r.page}`;
+    const viewerUrl = `viewer.html?entry=${r.edition}-${r.id}&ansicht=zeilentreu`;
 
     let html = `<div class="result-header">`;
     html += `<a class="result-id" href="${viewerUrl}">${esc(r.id)}</a>`;

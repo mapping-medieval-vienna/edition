@@ -168,6 +168,26 @@ function loadPage(p) {
           wrapper.appendChild(backLink);
           firstP.remove();
         }
+
+        // Edition-Links neben h3 setzen:
+        // marked rendert [Edition](url) vor ### Überschrift als eigenes <p>,
+        // gefolgt von <h3>. Wir fassen beide in einen Flex-Wrapper.
+        content.querySelectorAll('h3').forEach(h3 => {
+          const prev = h3.previousElementSibling;
+          const link = prev && prev.tagName === 'P'
+            ? prev.querySelector('a[href*="viewer.html"]')
+            : null;
+          if (link && prev.querySelectorAll('a[href*="viewer.html"]').length === 1) {
+            link.className = 'entry-edition-link';
+            const wrapper = document.createElement('div');
+            wrapper.className = 'entry-heading';
+            h3.parentNode.insertBefore(wrapper, h3);
+            wrapper.appendChild(h3);
+            wrapper.appendChild(link);
+            // Remove prev only if it's now empty (no other meaningful content)
+            if (!prev.textContent.trim()) prev.remove();
+          }
+        });
       }
 
       // Scroll to hash anchor after content is in the DOM
