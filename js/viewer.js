@@ -324,7 +324,11 @@ function renderTranscript(idx) {
 
     if (formMode) {
       const ab = findChild(entryNode, "ab", "formular");
-      if (ab) wrapper.appendChild(teiToHtml(ab));
+      if (ab) {
+        const rendered = teiToHtml(ab);
+        linkifyHausIds(rendered);
+        wrapper.appendChild(rendered);
+      }
     } else {
       for (const part of item.parts) {
         wrapper.appendChild(teiToHtml(part));
@@ -435,6 +439,36 @@ function teiToHtml(node, inFormularAb) {
   return el;
 }
 
+/* ── Linkify house IDs (DB####[a-z]*) in rendered formular HTML ── */
+function linkifyHausIds(el) {
+  const idRe = /\bDB\d{4}[a-z]*/g;
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  const toReplace = [];
+  let node;
+  while ((node = walker.nextNode())) {
+    if (idRe.test(node.textContent)) toReplace.push(node);
+    idRe.lastIndex = 0;
+  }
+  for (const textNode of toReplace) {
+    const frag = document.createDocumentFragment();
+    const text = textNode.textContent;
+    let last = 0, m;
+    idRe.lastIndex = 0;
+    while ((m = idRe.exec(text)) !== null) {
+      if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+      const baseId = m[0].replace(/[a-z]+$/, '');
+      const a = document.createElement("a");
+      a.className = "obj-id-link";
+      a.href = `info.html?p=daten/haeuser/biografien/${baseId}`;
+      a.textContent = m[0];
+      frag.appendChild(a);
+      last = m.index + m[0].length;
+    }
+    if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    textNode.parentNode.replaceChild(frag, textNode);
+  }
+}
+
 /* ── Build entry-head div with ID label and house-ID links ── */
 function buildEntryHead(entryNode, isContinuation) {
   const id = entryNode.getAttribute("n") || entryNode.getAttributeNS("http://www.w3.org/XML/1998/namespace", "id");
@@ -445,23 +479,27 @@ function buildEntryHead(entryNode, isContinuation) {
   idSpan.textContent = id + (isContinuation ? " (Forts.)" : "");
   label.appendChild(idSpan);
 
-  // Extract house IDs (DB####[a-z]*) from the formular ab
-  const ab = findChild(entryNode, "ab", "formular");
-  if (ab) {
-    const abText = ab.textContent;
-    const idRe = /DB\d{4}[a-z]*/g;
-    const seen = new Set();
-    let m;
-    while ((m = idRe.exec(abText)) !== null) {
-      const fullId = m[0];
-      const baseId = fullId.replace(/[a-z]+$/, '');
-      if (seen.has(baseId)) continue;
-      seen.add(baseId);
-      const a = document.createElement("a");
-      a.className = "obj-id-link";
-      a.href = `info.html?p=daten/haeuser/biografien/${baseId}`;
-      a.textContent = fullId;
-      label.appendChild(a);
+  // Extract house IDs (DB####[a-z]*) from the formular ab — only in line-accurate mode;
+  // in formular mode the IDs are linkified inline by linkifyHausIds().
+  const formMode = document.getElementById("toggle-form").getAttribute("aria-checked") === "true";
+  if (!formMode) {
+    const ab = findChild(entryNode, "ab", "formular");
+    if (ab) {
+      const abText = ab.textContent;
+      const idRe = /DB\d{4}[a-z]*/g;
+      const seen = new Set();
+      let m;
+      while ((m = idRe.exec(abText)) !== null) {
+        const fullId = m[0];
+        const baseId = fullId.replace(/[a-z]+$/, '');
+        if (seen.has(baseId)) continue;
+        seen.add(baseId);
+        const a = document.createElement("a");
+        a.className = "obj-id-link";
+        a.href = `info.html?p=daten/haeuser/biografien/${baseId}`;
+        a.textContent = fullId;
+        label.appendChild(a);
+      }
     }
   }
 
