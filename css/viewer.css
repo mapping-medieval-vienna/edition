@@ -137,6 +137,26 @@
 }
 
 
+/* ── Slot hover (beide Ansichten: rs, date, measure) ── */
+span.tei-rs:hover,
+span[class*="tei-rs-"]:hover,
+span.tei-date:hover,
+span.tei-measure:hover {
+  background: rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+}
+/* Zeilengetreue Ansicht: schwächere Betonung des ganzen rs wenn form-lines vorhanden */
+span[class*="tei-rs-"]:has(.form-line):hover,
+span.tei-rs:has(.form-line):hover {
+  background: rgba(0, 0, 0, 0.07);
+}
+/* Stärkere Betonung der aktiven form-line */
+span[class*="tei-rs-"] .form-line:hover,
+span.tei-rs .form-line:hover {
+  background: rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+}
+
 /* ── TEI element styles ── */
 .tei-del { text-decoration: line-through; color: var(--col-muted); }
 

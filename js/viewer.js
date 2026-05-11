@@ -337,6 +337,9 @@ function renderTranscript(idx) {
 
     pane.appendChild(wrapper);
   }
+
+  // Wrap form-line sections for hover highlighting (line-accurate view)
+  if (!formMode) wrapFormLines(pane);
 }
 
 /* ── Render a continuation (p[@part M|F] nodes of an entry begun earlier) ── */
@@ -437,6 +440,48 @@ function teiToHtml(node, inFormularAb) {
     }
   }
   return el;
+}
+
+
+/* ── Wrap form-line sections within rs elements (line-accurate view) ──
+   Splits the children of each tei-rs-* span at newlines in text nodes into
+   <span class="form-line"> wrappers, enabling CSS :hover per section.
+   <lb facs="..."/> elements that fall within a line stay inside their span. ── */
+function wrapFormLines(pane) {
+  const selector = "span.tei-rs, span[class*='tei-rs-'], span.tei-date, span.tei-measure";
+  for (const rs of pane.querySelectorAll(selector)) {
+
+    // Flatten top-level children into sections split at \n in text nodes.
+    // A text node containing "foo\nbar" becomes ["foo", SPLIT, "bar"].
+    const sections = [[]];
+
+    for (const child of Array.from(rs.childNodes)) {
+      if (child.nodeType === 3) {
+        // Text node: split at newlines
+        const parts = child.textContent.split("\n");
+        for (let i = 0; i < parts.length; i++) {
+          if (i > 0) sections.push([]); // newline → new section
+          if (parts[i]) sections[sections.length - 1].push(
+            document.createTextNode(parts[i])
+          );
+        }
+      } else {
+        sections[sections.length - 1].push(child);
+      }
+    }
+
+    // Only wrap if there are multiple non-empty sections
+    const nonEmpty = sections.filter(s => s.length > 0);
+    if (nonEmpty.length < 2) continue;
+
+    rs.innerHTML = "";
+    for (const section of nonEmpty) {
+      const span = document.createElement("span");
+      span.className = "form-line";
+      for (const node of section) span.appendChild(node);
+      rs.appendChild(span);
+    }
+  }
 }
 
 /* ── Linkify house IDs (DB####[a-z]*) in rendered formular HTML ── */
