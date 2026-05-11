@@ -199,6 +199,35 @@
   transform: translateX(11px);
 }
 
+/* ── Annotation tooltip (zeilengetreue Ansicht) ── */
+.annotation-tip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 3px);
+  left: 0;
+  background: #333;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+}
+.mode-line span.tei-rs:hover > .annotation-tip,
+.mode-line span[class*="tei-rs-"]:hover > .annotation-tip,
+.mode-line span.tei-date:hover > .annotation-tip,
+.mode-line span.tei-measure:hover > .annotation-tip {
+  display: block;
+}
+.mode-line span.tei-rs,
+.mode-line span[class*="tei-rs-"],
+.mode-line span.tei-date,
+.mode-line span.tei-measure {
+  position: relative;
+}
+
 /* ── TEI element styles ── */
 .tei-del { text-decoration: line-through; color: var(--col-muted); }
 

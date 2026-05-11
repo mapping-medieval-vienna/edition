@@ -458,6 +458,26 @@ function teiToHtml(node, inFormularAb) {
       if (converted) el.appendChild(converted);
     }
   }
+
+  // Annotation tooltip for rs/date/measure in line-accurate view —
+  // inserted after children so el.firstChild is the first real content node
+  if (!inFormularAb && (tag === "rs" || tag === "date" || tag === "measure")) {
+    const parts = [];
+    if (type) parts.push(type);
+    const ref = node.getAttribute("ref");
+    if (ref) parts.push(ref.replace(/#/g, "").replace(/\s+/g, ", "));
+    const commodity = node.getAttribute("commodity");
+    if (commodity) parts.push(commodity);
+    const when = node.getAttribute("when");
+    if (when) parts.push(when);
+    if (parts.length > 0) {
+      const tip = document.createElement("span");
+      tip.className = "annotation-tip";
+      tip.textContent = parts.join(" · ");
+      el.insertBefore(tip, el.firstChild);
+    }
+  }
+
   return el;
 }
 
@@ -471,10 +491,12 @@ function wrapFormLines(pane) {
   for (const rs of pane.querySelectorAll(selector)) {
 
     // Flatten top-level children into sections split at \n in text nodes.
-    // A text node containing "foo\nbar" becomes ["foo", SPLIT, "bar"].
+    // Skip the annotation-tip span — it will be re-attached after wrapping.
+    const tipNode = rs.querySelector(":scope > .annotation-tip");
     const sections = [[]];
 
     for (const child of Array.from(rs.childNodes)) {
+      if (child === tipNode) continue; // handled separately
       if (child.nodeType === 3) {
         // Text node: split at newlines
         const parts = child.textContent.split("\n");
@@ -494,6 +516,8 @@ function wrapFormLines(pane) {
     if (nonEmpty.length < 2) continue;
 
     rs.innerHTML = "";
+    // Re-attach the tooltip first so it stays at the top
+    if (tipNode) rs.appendChild(tipNode);
     for (let i = 0; i < nonEmpty.length; i++) {
       const span = document.createElement("span");
       span.className = "form-line form-line-" + (i % 2 === 0 ? "even" : "odd");
