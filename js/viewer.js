@@ -145,7 +145,7 @@ function highlightEntry(entryN) {
   const pane = document.getElementById("transcript-pane");
   // entry-head divs contain the entry ID as text
   for (const head of pane.querySelectorAll(".entry-head")) {
-    if (head.textContent.trim() === entryN) {
+    if (head.querySelector("span")?.textContent.trim() === entryN) {
       const entryEl = head.closest(".entry");
       if (entryEl) {
         entryEl.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -607,8 +607,8 @@ function buildEntryHead(entryNode, isContinuation) {
     setFormMode(!isForm);
     requestAnimationFrame(() => {
       const pane = document.getElementById("transcript-pane");
-      for (const head of pane.querySelectorAll(".entry-head span")) {
-        if (head.textContent.trim() === entryId) {
+      for (const head of pane.querySelectorAll(".entry-head")) {
+        if (head.querySelector("span")?.textContent.trim() === entryId) {
           const entryEl = head.closest(".entry");
           if (entryEl) entryEl.scrollIntoView({ block: "start", behavior: "instant" });
           break;
