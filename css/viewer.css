@@ -150,14 +150,19 @@
 .mode-line span.tei-measure:hover {
   background: rgba(0, 0, 0, 0.09);
   border-radius: 2px;
+  
+  /* dieser Zusatz löst das Problem mit dem Zappeln */
+  padding: 4px 0px;
+  box-decoration-break: clone;
+  transition: background-color 0.2s ease;
 }
 /* Abwechselnde Färbung der Formularzeilen wenn rs aktiv (js setzt rs-active) */
 .mode-line span.rs-active .form-line-even {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 2px;
 }
 .mode-line span.rs-active .form-line-odd {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 2px;
 }
 .form-line {
