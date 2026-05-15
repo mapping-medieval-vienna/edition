@@ -220,19 +220,27 @@
   pointer-events: none;
   z-index: 10;
 }
+
+@keyframes tooltip-appear {
+  0%   { opacity: 0; }
+  99%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .mode-line span.tei-rs:hover > .annotation-tip,
 .mode-line span[class*="tei-rs-"]:hover > .annotation-tip,
 .mode-line span.tei-date:hover > .annotation-tip,
 .mode-line span.tei-measure:hover > .annotation-tip {
   display: block;
+  animation: tooltip-appear 1s linear forwards;
 }
+
 .mode-line span.tei-rs,
 .mode-line span[class*="tei-rs-"],
 .mode-line span.tei-date,
 .mode-line span.tei-measure {
   position: relative;
 }
-
 /* ── TEI element styles ── */
 .tei-del { text-decoration: line-through; color: var(--col-muted); }
 
