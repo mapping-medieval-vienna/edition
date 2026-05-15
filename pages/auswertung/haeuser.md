@@ -1,20 +1,13 @@
 # Häuser
 
-Wir sind dabei, die Häuserbiografien mit einem Skript aus unsereren Arbeits-Spreadsheets in das Repository zu übertragen. Erste Beispiele aus der Wiltwerkerstraße:
+Wir sind dabei, die Häuserbiografien mit einem Skript aus unsereren Arbeits-Spreadsheets in das Daten-Repository zu übertragen. Häuser, die bereits eine ID besitzen, sind von allen zugehörigen Einträgen aus verlinkt.
 
-[DB1020](info.html?p=daten/haeuser/biografien/DB1020)
+Zum Beispiel verlinkt der Eintrag
+[KB-E-013-4](http://localhost:8000/viewer.html?entry=KB-E-013-4) 
+auf die Hausbiografie 
+[DB5240](info.html?p=daten/haeuser/biografien/DB5240).
 
-[DB1057](info.html?p=daten/haeuser/biografien/DB1057),
-[DB1058](info.html?p=daten/haeuser/biografien/DB1058)
+Eine vollständige Liste aller bisher übertragenenen Hausbiografien ist im Daten-Repository im Ordner 
+[biografien](https://github.com/mapping-medieval-vienna/daten/tree/main/haeuser/biografien) .
 
-[DB5037a](info.html?p=daten/haeuser/biografien/DB5037a),
-[DB5037b](info.html?p=daten/haeuser/biografien/DB5037b)
-
-[DB5205](info.html?p=daten/haeuser/biografien/DB5205)
-
-[DB5207](info.html?p=daten/haeuser/biografien/DB5207)
-
-Eine vollständige Liste aller bisher übertragenenen Hausbiografien ist hier:
-
-https://github.com/mapping-medieval-vienna/daten/tree/main/haeuser
 
