@@ -7160,12 +7160,13 @@ mit den egenant haus allen seinen frumen zeschaffen</rs>
 <lb/>
 verkaufⒺ<rs type="ereignis">habent verkaufft</rs>
 <lb/>
-DB5220Ⓞ<rs type="objekt">zwai hewser
+<rs>zwai hewser
 <lb/>die der benant Hestl hinder sein gelassen und zu verkauffen geschafft hat</rs>
 <lb/>
-<rs>ains</rs>
-Hohe Brücke, WiltwerkerstraßeⓁ<rs type="lage">gelegen an der Hohenprugk in der Wiltwerherstrass
-<lb/>und das ander daran</rs>
+DB5044Ⓞ<rs type="objekt">ains</rs>
+Hohe Brücke, WiltwerkerstraßeⓁ<rs type="lage">gelegen an der Hohenprugk in der Wiltwerherstrass</rs>
+<lb/>
+DB5045Ⓞ<rs type="objekt">und das ander daran</rs>
 Ⓝ<rs type="neben">zenagst Micheln Sitichs des goltsmids haus</rs>
 <lb/>
 300 tl.Ⓟ<measure type="preis">umb drewhundert phunt phenning</measure>
@@ -7189,12 +7190,13 @@ dieczeit baid ausrichter und volfurer des Gescheffts <lb facs="#facs_40_r3l20" n
 
 <rs type="ereignis" ref="#verkauf">habent verkaufft</rs> 
 
-<rs type="objekt" ref="#DB5220">zwai hewser 
+<rs>zwai hewser 
 die der benant <lb facs="#facs_40_r3l21" n="N005"/>Hestl hinder sein gelassen und zu verkauffen geschafft hat</rs> 
 
-<rs>ains</rs> 
-<rs type="lage" ref="#Hohe_Brücke #Wiltwerkerstraße">gelegen an der <lb facs="#facs_40_r3l22" n="N006"/>Hohenprugk in der Wiltwerherstrass 
-und das ander daran</rs> 
+<rs type="objekt" ref="#DB5044">ains</rs> 
+<rs type="lage" ref="#Hohe_Brücke #Wiltwerkerstraße">gelegen an der <lb facs="#facs_40_r3l22" n="N006"/>Hohenprugk in der Wiltwerherstrass</rs> 
+
+<rs type="objekt" ref="#DB5045">und das ander daran</rs> 
 <rs type="neben">zenagst Micheln <lb facs="#facs_40_r3l23" n="N007"/>Sitichs des goltsmids haus</rs> 
 
 <measure type="preis" commodity="300 tl.">umb drewhundert phunt phenning</measure> 
@@ -14735,7 +14737,7 @@ ipse potestatem</rs>
 Ⓥ<rs type="von">Chunrat Ottinger dieczeit des Rats zu Wienn</rs>
 verkaufⒺ<rs type="ereignis">hat verchaufft</rs>
 <lb/>
-(DB5423)Ⓞ<rs type="objekt">sein haus</rs>
+DB5445?Ⓞ<rs type="objekt">sein haus</rs>
 Hoher MarktⓁ<rs type="lage">gelegen am Hohenmarkt</rs>
 Ⓝ<rs type="neben">zenagst der Wurffel zuhaus</rs>
 <lb/>
@@ -14757,7 +14759,7 @@ Hoher MarktⓁ<rs type="lage">gelegen am Hohenmarkt</rs>
 <rs type="von">Chunrat Ottinger dieczeit des Rats zu Wienn</rs> 
 <rs type="ereignis" ref="#verkauf">hat verchaufft</rs> 
 
-<rs type="objekt" ref="#(DB5423)">sein haus</rs> <lb facs="#facs_90_r2l3" n="N002"/>
+<rs type="objekt" ref="#DB5445?">sein haus</rs> <lb facs="#facs_90_r2l3" n="N002"/>
 <rs type="lage" ref="#Hoher_Markt">gelegen am Hohenmarkt</rs> 
 <rs type="neben">zenagst der Wurffel zuhaus</rs> 
 
@@ -17662,7 +17664,7 @@ BognergasseⓁ<rs type="lage">gelegen in der Pognerstrass zu Wienn</rs>
 DB0079Ⓝ<rs type="neben">zenagst Merten des Gruber haus an aim tail</rs>
 DB0081Ⓝ<rs type="neben">und an dem andern zenagst Petern Leisser des pogner haus</rs>
 <lb/>
-Ⓞ<rs type="objekt">und darczu den hindern gemawrten stokch</rs>
+DB0082Ⓞ<rs type="objekt">und darczu den hindern gemawrten stokch</rs>
 hinter St. PankrazⓁ<rs type="lage">der da stosst an daz gessel hinder sand Pangreczen</rs>
 Ⓝ<rs type="neben">und liegt zwischen Ulreichs des Weinsnabels</rs>
 Ⓝ<rs type="neben">und weilnt des goltloffels hewsen</rs>
@@ -17702,7 +17704,7 @@ an stat Niclasen <lb facs="#facs_117_r2l17" n="N005"/>des benant Ulreichs selige
 <rs type="neben" ref="#DB0079">zenagst <lb facs="#facs_117_r2l20" n="N008"/>Merten des Gruber haus an aim tail</rs> 
 <rs type="neben" ref="#DB0081">und an dem andern zenagst <lb facs="#facs_117_r2l21" n="N009"/>Petern Leisser des pogner haus</rs> 
 
-<rs type="objekt">und darczu den hindern gemawrten <lb facs="#facs_117_r2l22" n="N010"/>stokch</rs> 
+<rs type="objekt" ref="#DB0082">und darczu den hindern gemawrten <lb facs="#facs_117_r2l22" n="N010"/>stokch</rs> 
 <rs type="lage" ref="#hinter_St._Pankraz">der da stosst an daz gessel hinder sand Pangreczen</rs> 
 <rs type="neben">und liegt <lb facs="#facs_117_r2l23" n="N011"/>zwischen Ulreichs des Weinsnabels</rs> 
 <rs type="neben">und weilnt des goltloffels <lb facs="#facs_117_r2l24" n="N012"/>hewsen</rs> 
@@ -20444,12 +20446,12 @@ Gieng er aber mit <lb facs="#facs_132_r2l38" n="N004"/>dem tod ab Ee denn Si So 
 Ⓥ<rs type="von">Elzbetth weilent Michels des Margenpesser witib</rs>
 verkaufⒺ<rs type="ereignis">hat verkaufft</rs>
 <lb/>
-DB5220Ⓞ<rs type="objekt">Ire zwai heuser</rs>
+<rs>Ire zwai heuser</rs>
 <lb/>
-<rs>ains</rs>
+DB5044Ⓞ<rs type="objekt">ains</rs>
 Hohe Brücke, WiltwerkerstraßeⓁ<rs type="lage">gelegen bei der Hohenprugk in der Wildwercherstrass</rs>
 <lb/>
-<rs>und das ander zenegst demselben haus an aim tail</rs>
+DB5045Ⓞ<rs type="objekt">und das ander zenegst demselben haus an aim tail</rs>
 Ⓝ<rs type="neben">und zenegst Mertten des frawnmesser haus an dem andern</rs>
 <lb/>
 <rs>die Si und Ir wirt miteinander gekaufft habent</rs>
@@ -20472,12 +20474,12 @@ Hohe Brücke, WiltwerkerstraßeⓁ<rs type="lage">gelegen bei der Hohenprugk in 
 <rs type="von">Elzbetth weilent Michels des Margenpesser witib</rs> 
 <rs type="ereignis" ref="#verkauf">hat verkaufft</rs> 
 
-<rs type="objekt" ref="#DB5220">Ire zwai heuser</rs> 
+<rs>Ire zwai heuser</rs> 
 <lb facs="#facs_133_r3l4" n="N002"/>
-<rs>ains</rs> 
+<rs type="objekt" ref="#DB5044">ains</rs> 
 <rs type="lage" ref="#Hohe_Brücke #Wiltwerkerstraße">gelegen bei der Hohenprugk in der Wildwercherstrass</rs> 
 
-<rs>und das ander <lb facs="#facs_133_r3l5" n="N003"/>zenegst demselben haus an aim tail</rs> 
+<rs type="objekt" ref="#DB5045">und das ander <lb facs="#facs_133_r3l5" n="N003"/>zenegst demselben haus an aim tail</rs> 
 <rs type="neben">und zenegst Mertten des frawnmesser haus <lb facs="#facs_133_r3l6" n="N004"/>an dem andern</rs> 
 
 <rs>die Si und Ir wirt miteinander gekaufft habent</rs> 
@@ -27418,7 +27420,7 @@ und allen irn frumen damit zeschaffen verkauffen verseczen <lb facs="#facs_197_r
 schenkungⒺ<rs type="ereignis">hat ubergegeben
 <lb/>sein Muter frawn Kathrein des benant seins vater witiben</rs>
 <lb/>
-(DB5478)Ⓞ<rs type="objekt">seinen halbentail des halben hauss
+DB5478Ⓞ<rs type="objekt">seinen halbentail des halben hauss
 <lb/>das weilent ganczes Weikcharts des pheilsniczer gewesen ist
 <lb/>des gegentail des benanten haws die vorgenant Kathrey vormaln hat</rs>
 <lb/>
@@ -27442,7 +27444,7 @@ unter den PfeilschnitzernⓁ<rs type="lage">gelegen under den pheilsniczern ze W
 <rs type="ereignis" ref="#schenkung">hat ubergegeben 
 sein Muter frawn Kathrein des <lb facs="#facs_197_r1l12" n="N002"/>benant seins vater witiben</rs> 
 
-<rs type="objekt" ref="#(DB5478)">seinen halbentail des halben hauss 
+<rs type="objekt" ref="#DB5478">seinen halbentail des halben hauss 
 das weilent ganczes Weikcharts <lb facs="#facs_197_r1l13" n="N003"/>des pheilsniczer gewesen ist 
 des gegentail des benanten haws die vorgenant Kathrey vormaln hat</rs> 
 <lb facs="#facs_197_r1l14" n="N004"/>
@@ -36005,7 +36007,7 @@ verkaufⒺ<rs type="ereignis">hat verkaufft
 <lb/>an stat Hannsen seines Sun den Er bey weilent Dorothen seiner hausfrawn seligen gehabt hat
 <lb/>der noch nicht vogtper ist fur den Er sich genczlich hat angenomen</rs>
 <lb/>
-DB5434Ⓞ<rs type="objekt">ain kram</rs>
+DB5461Ⓞ<rs type="objekt">ain kram</rs>
 DB5432Ⓝ<rs type="neben">gelegen In der Slechtin zu haus</rs>
 Hoher MarktⓁ<rs type="lage">am Eck an dem Hohenmarkt
 <lb/>gegen dem Leinwathaus uber</rs>
@@ -53939,7 +53941,7 @@ doch daz er vollen gwalt hab</rs>
 Ⓥ<rs type="von">Bruder Lienhart Pryor zu Maurbach des ordens von karthus und der Convent gemain daselbs</rs>
 verkaufⒺ<rs type="ereignis">habent verkaufft</rs>
 <lb/>
-(DB5412)Ⓞ<rs type="objekt">Irn grossen gwantkeler</rs>
+DB5412Ⓞ<rs type="objekt">Irn grossen gwantkeler</rs>
 Hoher MarktⓁ<rs type="lage">gelegen under den Gwelbten lauben an dem Hohenmarkt</rs>
 FischmarktⓁ<rs type="lage">under dem Schuchhaus inden an dem Ort gegen dem Vischmarkt uber</rs>
 <lb/>
@@ -53961,7 +53963,7 @@ FischmarktⓁ<rs type="lage">under dem Schuchhaus inden an dem Ort gegen dem Vis
 <rs type="von">Bruder Lienhart Pryor zu Maurbach des ordens von karthus und der Convent <lb facs="#facs_365_r3l22" n="N002"/>gemain daselbs</rs> 
 <rs type="ereignis" ref="#verkauf">habent verkaufft</rs> 
 
-<rs type="objekt" ref="#(DB5412)">Irn grossen gwantkeler</rs> 
+<rs type="objekt" ref="#DB5412">Irn grossen gwantkeler</rs> 
 <rs type="lage" ref="#Hoher_Markt">gelegen under den <lb facs="#facs_365_r3l23" n="N003"/>Gwelbten lauben an dem Hohenmarkt</rs> 
 <rs type="lage" ref="#Fischmarkt">under dem Schuchhaus inden an dem <lb facs="#facs_365_r3l24" n="N004"/>Ort gegen dem Vischmarkt uber</rs> 
 
@@ -68097,11 +68099,14 @@ mit den egenant haws allen seinen frumen zeschaffen</rs>
 verkaufⒺ<rs type="ereignis">habent verkaufft
 <lb/>von der grossen geltschuld wegen so dann der egenant Peter der Sturm zugelten hinder sein gelassen hat</rs>
 <lb/>
-DB5220Ⓞ<rs type="objekt">zway hewser
+<rs>zway hewser
 <lb/>die desselb Sturms gewesen sind</rs>
 Ⓝ<rs type="neben">nebeneinander gelegen</rs>
-Hohe Brücke, WiltwerkerstraßeⓁ<rs type="lage">ains zenagst der Hohenprugken in der Wiltberherstrass
-<lb/>und das ander daran</rs>
+<lb/>
+DB5044Ⓞ<rs type="objekt">ains</rs>
+Hohe Brücke, WiltwerkerstraßeⓁ<rs type="lage">zenagst der Hohenprugken in der Wiltberherstrass</rs>
+<lb/>
+DB5045Ⓞ<rs type="objekt">und das ander daran</rs>
 Ⓝ<rs type="neben">zenagst weilent Sitichs des Goltsmids haws</rs>
 <lb/>
 240 tl.Ⓟ<measure type="preis">umb iiᶜ und xl tl. Wienner d.</measure>
@@ -68127,11 +68132,14 @@ und volfurer des Gescheffts so Peter der Sturm seliger getan hat</rs> <lb facs="
 <rs type="ereignis" ref="#verkauf">habent verkaufft 
 von der grossen geltschuld wegen so dann der egenant <lb facs="#facs_440_r2l18" n="N004"/>Peter der Sturm zugelten hinder sein gelassen hat</rs> 
 
-<rs type="objekt" ref="#DB5220">zway hewser <lb facs="#facs_440_r2l19" n="N005"/>
+<rs>zway hewser <lb facs="#facs_440_r2l19" n="N005"/>
 die desselb Sturms gewesen sind</rs> 
 <rs type="neben">nebeneinander gelegen</rs> 
-<rs type="lage" ref="#Hohe_Brücke #Wiltwerkerstraße">ains zenagst <lb facs="#facs_440_r2l20" n="N006"/>der Hohenprugken in der Wiltberherstrass 
-und das ander daran</rs> <lb facs="#facs_440_r2l21" n="N007"/>
+
+<rs type="objekt" ref="#DB5044">ains</rs> 
+<rs type="lage" ref="#Hohe_Brücke #Wiltwerkerstraße">zenagst <lb facs="#facs_440_r2l20" n="N006"/>der Hohenprugken in der Wiltberherstrass</rs> 
+
+<rs type="objekt" ref="#DB5045">und das ander daran</rs> <lb facs="#facs_440_r2l21" n="N007"/>
 <rs type="neben">zenagst weilent Sitichs des Goltsmids haws</rs> 
 
 <measure type="preis" commodity="240 tl.">umb iiᶜ und xl tl. Wienner d.</measure> <lb facs="#facs_440_r2l22" n="N008"/>
@@ -73135,7 +73143,7 @@ und seinen erben</rs>
 Ⓥ<rs type="von">Paul Wurffl zu den zeiten Burgermaister und der Rat gemain der Stat ze Wienn
 <lb/>habent geben und verlihen</rs>
 <lb/>
-(DB5430)Ⓞ<rs type="objekt">das haws</rs>
+DB5430Ⓞ<rs type="objekt">das haws</rs>
 Hoher MarktⓁ<rs type="lage">gelegen am Hohenmarkht</rs>
 Ⓝ<rs type="neben">zenagst weilent Merten des Scherer haus</rs>
 <lb/>
@@ -73162,7 +73170,7 @@ Hoher MarktⓁ<rs type="lage">gelegen am Hohenmarkht</rs>
 <rs type="von">Paul Wurffl zu den zeiten Burgermaister und der Rat gemain der Stat ze Wienn <lb facs="#facs_473_r3l26" n="N002"/>
 habent geben und verlihen</rs> 
 
-<rs type="objekt" ref="#(DB5430)">das haws</rs> 
+<rs type="objekt" ref="#DB5430">das haws</rs> 
 <rs type="lage" ref="#Hoher_Markt">gelegen am Hohenmarkht</rs> 
 <rs type="neben">zenagst weilent <lb facs="#facs_473_r3l27" n="N003"/>Merten des Scherer haus</rs> 
 

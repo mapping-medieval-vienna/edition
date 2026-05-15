@@ -7169,7 +7169,7 @@ furbaser ledichlich und freileich <lb facs="#facs_45_r2l27" n="N009"/>zehaben un
 Ⓥ<rs type="von">Ulreich Gundloch zu den zeiten Burgermaister und Munsmaister und der Rate gemain der Stat ze Wienn</rs>
 verkaufⒺ<rs type="ereignis">habent verkaufft</rs>
 <lb/>
-DB5220bⓄ<rs type="objekt">ain haus</rs>
+DB5045Ⓞ<rs type="objekt">ain haus</rs>
 WiltwerkerstraßeⓁ<rs type="lage">gelegen in der Wildwercherstrazz ze Wienn</rs>
 Ⓝ<rs type="neben">zenegst Mertten des frawnmesser haus
 <lb/>das weilent Jacobs von Weithra des Juden gewesen ist</rs>
@@ -7188,7 +7188,7 @@ WiltwerkerstraßeⓁ<rs type="lage">gelegen in der Wildwercherstrazz ze Wienn</r
 <rs type="von">Ulreich Gundloch zu den zeiten Burgermaister und Munsmaister und der Rate gemain <lb facs="#facs_45_r2l32" n="N002"/>der Stat ze Wienn</rs> 
 <rs type="ereignis" ref="#verkauf">habent verkaufft</rs> 
 
-<rs type="objekt" ref="#DB5220b">ain haus</rs> 
+<rs type="objekt" ref="#DB5045">ain haus</rs> 
 <rs type="lage" ref="#Wiltwerkerstraße">gelegen in der Wildwercherstrazz <lb facs="#facs_45_r2l33" n="N003"/>ze Wienn</rs> 
 <rs type="neben">zenegst Mertten des frawnmesser haus 
 das weilent Jacobs von <lb facs="#facs_45_r2l34" n="N004"/>Weithra des Juden gewesen ist</rs> 
@@ -21961,7 +21961,7 @@ das die vorgenant Ewig mess darauf gehabt hat</rs>
 Ⓐ<rs type="an">Michel Margenpesser und Elspeth sein hausfraw</rs>
 ⓗ<rs type="floskel" subtype="empfangen">habent gevangen nucz und gewer</rs>
 <lb/>
-DB5220aⓄ<rs type="objekt">ains egk hauss</rs>
+DB5044Ⓞ<rs type="objekt">ains egk hauss</rs>
 Hohe BrückeⓁ<rs type="lage">in der Judengassen ze Wienn gelegen pey der Hohenprugk</rs>
 <lb/>
 ⓔ<rs type="ereignis">das vormalen Wolfen des Juden von der Newnstat gewesen</rs>
@@ -21985,7 +21985,7 @@ kaufⒺ<rs type="ereignis">gekaufft habent</rs>
 <rs type="an">Michel Margenpesser und Elspeth sein hausfraw</rs> 
 <rs type="floskel" subtype="empfangen">habent gevangen nucz und gewer</rs> 
 
-<rs type="objekt" ref="#DB5220a">ains egk <lb facs="#facs_122_r2l32" n="N002"/>hauss</rs> 
+<rs type="objekt" ref="#DB5044">ains egk <lb facs="#facs_122_r2l32" n="N002"/>hauss</rs> 
 <rs type="lage" ref="#Hohe_Brücke">in der Judengassen ze Wienn gelegen pey der Hohenprugk</rs> 
 
 <rs type="ereignis">das vormalen Wolfen <lb facs="#facs_122_r2l33" n="N003"/>des Juden von der Newnstat gewesen</rs> 
@@ -23718,8 +23718,9 @@ als es dann ausgeczaigt ist nach Innhaltung der tailbrief daruber <lb facs="#fac
 <ab type="formular">
 Ⓐ<rs type="an">Michel welser dieczeit der geistleichen frawn dacz sannd Jacoben ze Wienn schaffer</rs>
 ⓗ<rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer
-<lb/>an stat der benant seiner frawn Albrechts des Ryemer und Margrethen seiner hausfrawn</rs>
+<lb/>an stat der benant seiner frawn</rs>
 <lb/>
+<rs>Albrechts des Ryemer und Margrethen seiner hausfrawn</rs>
 DB5404Ⓞ<rs type="objekt">zwair tischstet</rs>
 Hoher Markt, RiemhausⓁ<rs type="lage">gelegen in dem Ryemhaus an dem Hohenmarkcht ze Wienn</rs>
 <lb/>
@@ -23743,8 +23744,9 @@ Hoher Markt, RiemhausⓁ<rs type="lage">gelegen in dem Ryemhaus an dem Hohenmark
 <lb facs="#facs_131_r1l3" n="N001"/>
 <rs type="an">Michel welser dieczeit der geistleichen frawn dacz sannd Jacoben ze Wienn schaffer</rs> <lb facs="#facs_131_r1l4" n="N002"/>
 <rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer 
-an stat der benant seiner frawn Albrechts des Ryemer und <lb facs="#facs_131_r1l5" n="N003"/>Margrethen seiner hausfrawn</rs> 
+an stat der benant seiner frawn</rs> 
 
+<rs>Albrechts des Ryemer und <lb facs="#facs_131_r1l5" n="N003"/>Margrethen seiner hausfrawn</rs> 
 <rs type="objekt" ref="#DB5404">zwair tischstet</rs> 
 <rs type="lage" ref="#Hoher_Markt #Riemhaus">gelegen in dem Ryemhaus an dem <lb facs="#facs_131_r1l6" n="N004"/>Hohenmarkcht ze Wienn</rs> 
 
@@ -24181,7 +24183,7 @@ nach lautt der tailbrief daruber gegeben</rs>
 Roter TurmⓁ<rs type="lage">gelegen bey dem Rotenturm ze Wienn</rs>
 Ⓝ<rs type="neben">zenegst Hans des pirpawmer haus</rs>
 <lb/>
-DB5434Ⓞ<rs type="objekt">und ainer kram</rs>
+DB5461Ⓞ<rs type="objekt">und ainer kram</rs>
 Hoher MarktⓁ<rs type="lage">gelegen am Hohenmarkcht</rs>
 DB5432Ⓝ<rs type="neben">in der Slechtin haus
 <lb/>gegen der Alten flachstuben uber an dem Egk</rs>
@@ -24204,7 +24206,7 @@ DB5432Ⓝ<rs type="neben">in der Slechtin haus
 <rs type="lage" ref="#Roter_Turm">gelegen bey <lb facs="#facs_133_r2l10" n="N002"/>dem Rotenturm ze Wienn</rs> 
 <rs type="neben">zenegst Hans des pirpawmer haus</rs> 
 
-<rs type="objekt" ref="#DB5434">und ainer kram</rs> 
+<rs type="objekt" ref="#DB5461">und ainer kram</rs> 
 <rs type="lage" ref="#Hoher_Markt">gelegen am <del>Alten</del> <lb facs="#facs_133_r2l11" n="N003"/>Hohenmarkcht</rs> 
 <rs type="neben" ref="#DB5432">in der Slechtin haus 
 gegen der Alten flachstuben uber an dem Egk</rs> 
@@ -27604,7 +27606,7 @@ nach lautt der tailbrief</rs>
 ⓗ<rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer
 <lb/>der hernach geschriben erbgut</rs>
 <lb/>
-(DB5475)Ⓞ<rs type="objekt">Item ain ziegel haus</rs>
+DB5475Ⓞ<rs type="objekt">Item ain ziegel haus</rs>
 PeurertorⓁ<rs type="lage">gelegen mit aim tail an Pewrertor</rs>
 Ⓝ<rs type="neben">und mit dem andern zenegst Kristans des Swertfeger haus</rs>
 <lb/>
@@ -27628,7 +27630,7 @@ LichtenstegⓁ<rs type="lage">gelegen am Liechtensteg ze Wienn</rs>
 <rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer 
 der hernach geschriben erbgut</rs> 
 
-<rs type="objekt" ref="#(DB5475)">Item ain <lb facs="#facs_147_line_1645622036499_346" n="N003"/>ziegel <lb facs="#facs_147_line_1645622050793_353" n="N004"/>haus</rs> <lb facs="#facs_147_r1l22" n="N005"/>
+<rs type="objekt" ref="#DB5475">Item ain <lb facs="#facs_147_line_1645622036499_346" n="N003"/>ziegel <lb facs="#facs_147_line_1645622050793_353" n="N004"/>haus</rs> <lb facs="#facs_147_r1l22" n="N005"/>
 <rs type="lage" ref="#Peurertor">gelegen mit aim tail an Pewrertor</rs> 
 <rs type="neben">und mit dem andern zenegst Kristans des <lb facs="#facs_147_r1l23" n="N006"/>Swertfeger haus</rs> 
 
@@ -29967,7 +29969,7 @@ sicut liber Civitatis sonat</rs>
 ⓗ<rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer
 <lb/>an stat sein selbs und seiner geswistreid Andren und Margrethen die noch nicht vogtper ist</rs>
 <lb/>
-(DB5418)Ⓞ<rs type="objekt">ains hauss</rs>
+DB5418Ⓞ<rs type="objekt">ains hauss</rs>
 Hoher MarktⓁ<rs type="lage">gelegen an dem Hohenmarkt in dem winkchel daman an der Stieg aufgeet</rs>
 Ⓝ<rs type="neben">zenegst des Helmleins haus</rs>
 <lb/>
@@ -29984,7 +29986,7 @@ Hoher MarktⓁ<rs type="lage">gelegen an dem Hohenmarkt in dem winkchel daman an
 <rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer 
 an stat <lb facs="#facs_157_r1l33" n="N002"/>sein selbs und seiner geswistreid Andren und Margrethen die noch nicht vogtper <lb facs="#facs_157_r1l34" n="N003"/>ist</rs> 
 
-<rs type="objekt" ref="#(DB5418)">ains hauss</rs> 
+<rs type="objekt" ref="#DB5418">ains hauss</rs> 
 <rs type="lage" ref="#Hoher_Markt">gelegen an dem Hohenmarkt in dem winkchel daman an der <lb facs="#facs_157_r1l35" n="N004"/>Stieg aufgeet</rs> 
 <rs type="neben">zenegst des Helmleins haus</rs> 
 
@@ -31558,7 +31560,7 @@ sicut liber Civitatis sonat</rs>
 Ⓐ<rs type="an">Chunrat pfeilsniczer</rs>
 ⓗ<rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer</rs>
 <lb/>
-(DB5479)Ⓞ<rs type="objekt">ains hauss</rs>
+DB5479Ⓞ<rs type="objekt">ains hauss</rs>
 unter den PfeilschnitzernⓁ<rs type="lage">gelegen under den Pfeilsniczern</rs>
 Ⓝ<rs type="neben">zenegst Wolfharts haus des pfeilsniczer</rs>
 <lb/>
@@ -31577,7 +31579,7 @@ unter den PfeilschnitzernⓁ<rs type="lage">gelegen under den Pfeilsniczern</rs>
 <rs type="an">Chunrat pfeilsniczer</rs> 
 <rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer</rs> 
 
-<rs type="objekt" ref="#(DB5479)">ains hauss</rs> 
+<rs type="objekt" ref="#DB5479">ains hauss</rs> 
 <rs type="lage" ref="#unter_den_Pfeilschnitzern">gelegen under den <lb facs="#facs_163_r1l24" n="N002"/>Pfeilsniczern</rs> 
 <rs type="neben">zenegst Wolfharts haus des pfeilsniczer</rs> 
 
@@ -31751,7 +31753,7 @@ unter den langen TuchlaubenⓁ<rs type="lage">gelegen gegen den langen Tuchlaube
 Ⓐ<rs type="an">Ott Weiss diezeit des Rats der Stat ze Wienn</rs>
 ⓗ<rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer</rs>
 <lb/>
-DB5220Ⓞ<rs type="objekt">Micheln des Margenpesser und Elzbethen seiner hausfrawn haus</rs>
+DB5044Ⓞ<rs type="objekt">Micheln des Margenpesser und Elzbethen seiner hausfrawn haus</rs>
 WiltwerkerstraßeⓁ<rs type="lage">gelegen in der Wildwercherstrass am Egk</rs>
 Ⓝ<rs type="neben">zenegst Mertten frawnmesser haus</rs>
 <lb/>
@@ -31768,7 +31770,7 @@ WiltwerkerstraßeⓁ<rs type="lage">gelegen in der Wildwercherstrass am Egk</rs>
 <rs type="an">Ott Weiss diezeit des Rats der Stat ze Wienn</rs> 
 <rs type="floskel" subtype="empfangen">hat gevangen nucz und gewer</rs> 
 <lb facs="#facs_164_r3l8" n="N002"/>
-<rs type="objekt" ref="#DB5220">Micheln des Margenpesser und Elzbethen seiner hausfrawn haus</rs> 
+<rs type="objekt" ref="#DB5044">Micheln des Margenpesser und Elzbethen seiner hausfrawn haus</rs> 
 <rs type="lage" ref="#Wiltwerkerstraße">gelegen in <lb facs="#facs_164_r3l9" n="N003"/>der Wildwercherstrass am Egk</rs> 
 <rs type="neben">zenegst Mertten frawnmesser haus</rs> 
 
@@ -35021,11 +35023,11 @@ ut littera Judicis sonat</rs>
 <lb/>
 <rs>zwair heuser</rs>
 <lb/>
-DB5220aⓄ<rs type="objekt">ains</rs>
+DB5044Ⓞ<rs type="objekt">ains</rs>
 Hohe Brücke, JudengasseⓁ<rs type="lage">gelegen am Egk In der Judengassen bei der Hohenprugk
 <lb/>das vor maln Wolfen des Juden gewesen ist</rs>
 <lb/>
-DB5220bⓄ<rs type="objekt">und das ander</rs>
+DB5045Ⓞ<rs type="objekt">und das ander</rs>
 Ⓝ<rs type="neben">gelegen zenegst dem yeczgenant haus an aim tail</rs>
 Ⓝ<rs type="neben">und zenegst des frawnmesser haus an dem andern
 <lb/>das weilent Jacobs von Weithra des Juden ist gewesen</rs>
@@ -35045,11 +35047,11 @@ DB5220bⓄ<rs type="objekt">und das ander</rs>
 
 <rs>zwair <lb facs="#facs_177_r2l26" n="N002"/>heuser</rs> 
 
-<rs type="objekt" ref="#DB5220a">ains</rs> 
+<rs type="objekt" ref="#DB5044">ains</rs> 
 <rs type="lage" ref="#Hohe_Brücke #Judengasse">gelegen am Egk In der Judengassen bei der Hohenprugk 
 das vor <lb facs="#facs_177_r2l27" n="N003"/>maln Wolfen des Juden gewesen ist</rs> 
 
-<rs type="objekt" ref="#DB5220b">und das ander</rs> 
+<rs type="objekt" ref="#DB5045">und das ander</rs> 
 <rs type="neben">gelegen zenegst dem yeczgenant <lb facs="#facs_177_r2l28" n="N004"/>haus an aim tail</rs> 
 <rs type="neben">und zenegst des frawnmesser haus an dem andern 
 das weilent <lb facs="#facs_177_r2l29" n="N005"/>Jacobs von Weithra des Juden ist gewesen</rs> 
@@ -47360,7 +47362,9 @@ ut liber <lb facs="#facs_244_r1l46" n="N005"/>Civitatis sonat</rs>
 Ⓐ<rs type="an">Hanns Scharffenperger der Elter</rs>
 ⓗ<rs type="floskel" subtype="empfangen">hat emphangen nucz und gewer</rs>
 <lb/>
-DB5037Ⓞ<rs type="objekt">ains hauss</rs>
+DB5041Ⓞ<rs type="objekt"></rs>
+DB5042Ⓞ<rs type="objekt"></rs>
+DB5043Ⓞ<rs type="objekt">ains hauss</rs>
 WiltwerkerstraßeⓁ<rs type="lage">gelegen ze Wienn mit dem vordern tail gelegen in der Wildbergerstrass</rs>
 Gässlein gegenüber Otto und HaimoⓁ<rs type="lage">gelegen an ainem tail
 <lb/>zenagst dem Gesslein gegen hern Otten und Haymen kappellen uber</rs>
@@ -47377,26 +47381,16 @@ Gässlein gegenüber Otto und HaimoⓁ<rs type="lage">gelegen an ainem tail
 <lb/>exiussu consulum</rs>
 </ab>
 	<p facs="#facs_245_TextRegion_1644249411770_1246">
-<lb facs="#facs_245_r2l3" n="N001"/>
-<rs type="an">Hanns Scharffenperger der Elter</rs> 
-<rs type="floskel" subtype="empfangen">hat emphangen nucz und gewer</rs> 
-
-<rs type="objekt" ref="#DB5037">ains hauss</rs> 
-<rs type="lage" ref="#Wiltwerkerstraße">gelegen <lb facs="#facs_245_r2l4" n="N002"/>ze Wienn mit dem vordern tail gelegen in der Wildbergerstrass</rs> 
-<rs type="lage" ref="#Gässlein_gegenüber_Otto_und_Haimo">gelegen an ainem tail <lb facs="#facs_245_r2l5" n="N003"/>
-zenagst dem Gesslein gegen hern Otten und Haymen kappellen uber</rs> 
-<rs type="neben">und an dem andern <lb facs="#facs_245_r2l6" n="N004"/>tail zenegst der Peisserin haus</rs> 
-<rs type="neben">und an dem andern tail zenegst desselb Scharffenperger haus</rs> 
-<lb facs="#facs_245_r2l7" n="N005"/>
-<rs>daz Im der hochgeborn furst herczog Albrecht herczog ze Osterreich etc. ledichlichen uber <lb facs="#facs_245_r2l8" n="N006"/>gegeben hat 
-nach laut des briefs von demselb fursten Im darumb gegeben</rs> 
-
-<date when="1433-04-20">Actum an Montag <lb facs="#facs_245_r2l9" n="N007"/>vor Geori Anno etc. xxxiiiº</date> <lb facs="#facs_245_r2l11" n="N008"/>
-<measure type="gebühr" commodity="3 tl. 80 d.">Summa iii tl. lxxx d.</measure> 
-<lb facs="#facs_245_r1l1" n="N009"/>
-<rs>obtinuit folio 128 <lb facs="#facs_245_r1l2" n="N010"/>
-exiussu consulum</rs>
-
+		<lb facs="#facs_245_r2l3" n="N001"/>Hanns Scharffenperger der Elter hat emphangen nucz und gewer ains hauss gelegen
+		<lb facs="#facs_245_r2l4" n="N002"/>ze Wienn mit dem vordern tail gelegen in der Wildbergerstrass gelegen an ainem tail
+		<lb facs="#facs_245_r2l5" n="N003"/>zenagst dem Gesslein gegen hern Otten und Haymen kappellen uber und an dem andern
+		<lb facs="#facs_245_r2l6" n="N004"/>tail zenegst der Peisserin haus und an dem andern tail zenegst desselb Scharffenperger haus
+		<lb facs="#facs_245_r2l7" n="N005"/>daz Im der hochgeborn furst herczog Albrecht herczog ze Osterreich etc. ledichlichen uber
+		<lb facs="#facs_245_r2l8" n="N006"/>gegeben hat nach laut des briefs von demselb fursten Im darumb gegeben <date>Actum an Montag
+		<lb facs="#facs_245_r2l9" n="N007"/>vor Geori Anno etc. xxxiiiº</date>
+		<lb facs="#facs_245_r2l11" n="N008"/>Summa iii tl. lxxx d.
+		<lb facs="#facs_245_r1l1" n="N009"/>obtinuit folio 128
+		<lb facs="#facs_245_r1l2" n="N010"/>exiussu consulum
 	</p>
 </div>
 
@@ -50373,7 +50367,7 @@ mit allen den gemechen <lb facs="#facs_261_r2l36" n="N006"/>und gemainen stukhen
 <lb/>und fraw Margret Hannsen des Scharffenperger hausfraw</rs>
 ⓗ<rs type="floskel" subtype="empfangen">habent emphangen nucz und gewer</rs>
 <lb/>
-(DB5452)Ⓞ<rs type="objekt">ains halben hauss</rs>
+DB5452Ⓞ<rs type="objekt">ains halben hauss</rs>
 Hoher Markt, WürffelⓁ<rs type="lage">gancz gelegen am Egk als man vom Hohenmarkt zu unser frawn get
 <lb/>und sesset an der Wurffl haus</rs>
 <lb/>
@@ -50397,7 +50391,7 @@ Gregorii wachsgiesser
 und fraw Margret Hannsen des <lb facs="#facs_262_r2l3" n="N003"/>Scharffenperger hausfraw</rs> 
 <rs type="floskel" subtype="empfangen">habent emphangen nucz und gewer</rs> 
 
-<rs type="objekt" ref="#(DB5452)">ains halben hauss</rs> <lb facs="#facs_262_line_1634814740208_132" n="N004"/>
+<rs type="objekt" ref="#DB5452">ains halben hauss</rs> <lb facs="#facs_262_line_1634814740208_132" n="N004"/>
 <rs type="lage" ref="#Hoher_Markt #Würffel">gancz gelegen am Egk als man vom Hohenmarkt zu unser frawn get <lb facs="#facs_262_r2l6" n="N005"/>
 und sesset an der Wurffl haus</rs> 
 
@@ -62065,7 +62059,9 @@ ist anerstorben und angeerbt</rs>
 Ⓐ<rs type="an">Hanns Scharffenperger dieczeit ainer des Rats der Stat ze Wienn</rs>
 ⓗ<rs type="floskel" subtype="empfangen">hat emphangen nucz und gwer</rs>
 <lb/>
-DB5037Ⓞ<rs type="objekt">ains hawss</rs>
+DB5041Ⓞ<rs type="objekt"></rs>
+DB5042Ⓞ<rs type="objekt"></rs>
+DB5043Ⓞ<rs type="objekt">ains hawss</rs>
 WiltwerkerstraßeⓁ<rs type="lage">gelegen mit dem vordern tail in der Wiltwerherstrass zeWienn</rs>
 Ⓝ<rs type="neben">an aim tail zenagst dem Gesslein gegen hern Otten und Haimen Cappellen uber</rs>
 Ⓝ<rs type="neben">zenagst Jeronimen Moser des oler haws</rs>
@@ -62088,32 +62084,24 @@ verkaufⒽ<rs type="note">Nota die zwen tail des vorgenant hauss hat der Scharff
 <lb/>und derselb geltbrief ist auch zesniten und ausgetan</rs>
 </ab>
 	<p facs="#facs_335_TextRegion_1643374997892_136">
-<lb facs="#facs_335_r1l27" n="N001"/>
-<rs type="an">Hanns Scharffenperger dieczeit ainer des Rats der Stat ze Wienn</rs> 
-<rs type="floskel" subtype="empfangen">hat emphangen nucz und <lb facs="#facs_335_r1l29" n="N002"/>gwer</rs> 
-
-<rs type="objekt" ref="#DB5037">ains hawss</rs> 
-<rs type="lage" ref="#Wiltwerkerstraße">gelegen mit dem vordern tail in der Wiltwerherstrass zeWienn</rs> <lb facs="#facs_335_r1l31" n="N003"/>
-<rs type="neben">an aim tail zenagst dem Gesslein gegen hern Otten und Haimen Cappellen uber</rs> 
-<rs type="neben">zenagst <lb facs="#facs_335_r1l33" n="N004"/>Jeronimen Moser des oler haws</rs> 
-<rs type="lage" ref="#Schiltergasse">und ligt mit dem hindern <del>gessle</del> tail in dem <lb facs="#facs_335_r1l34" n="N005"/>Schilttergesslein</rs> 
-
-<rs type="von">das In von Hannsen Scharffenperger seinem vater seligen</rs> 
-<rs type="ereignis" ref="#erbe">ist <lb facs="#facs_335_r1l35" n="N006"/>anerstorben und angeerbt</rs> 
-
-<rs type="belastung" subtype="grunddienst">doch unvergriffen der iiᶜ tl. d. die dem Spital vor- <lb facs="#facs_335_r1l36" n="N007"/>maln darauf verschriben sein</rs> 
-
-<date when="1437-12-09">Actum feria secunda ante Lucie Anno etc. xxxviiᵐº</date> <lb facs="#facs_335_r1l37" n="N008"/>
-<measure type="gebühr" commodity="0 d.">Summa nulla propter priorem</measure> 
-<lb facs="#facs_335_r1l26" n="N009"/>
-<rs type="note">vendidit purkrecht <lb facs="#facs_335_r1l28" n="N010"/>auf dem ainen <lb facs="#facs_335_r1l30" n="N011"/>drittail hauss <lb facs="#facs_335_r1l32" n="N012"/>folio 141 libro C</rs> 
-<lb facs="#facs_335_r1l38" n="N013"/>
-<rs type="note">Nota die zwen tail des vorgenant hauss hat der <lb facs="#facs_335_r1l39" n="N014"/>Scharffenperger verkauft 
-ainen tail Linharts Unger sneider <lb facs="#facs_335_r1l40" n="N015"/>und den andern tail Kunczen dem vasczieher 
-und den <lb facs="#facs_335_r1l41" n="N016"/>drittail hat er Im vorbehalden 
-und die genant cc <lb facs="#facs_335_r1l42" n="N017"/>tl. gancz als den haus geledigt 
-und derselb geltbrief <lb facs="#facs_335_r1l43" n="N018"/>ist auch zesniten und ausgetan</rs> <del>und hat</del>
-
+		<lb facs="#facs_335_r1l27" n="N001"/>Hanns Scharffenperger dieczeit ainer des Rats der Stat ze Wienn hat emphangen nucz und
+		<lb facs="#facs_335_r1l29" n="N002"/>gwer ains hawss gelegen mit dem vordern tail in der Wiltwerherstrass zeWienn
+		<lb facs="#facs_335_r1l31" n="N003"/>an aim tail zenagst dem Gesslein gegen hern Otten und Haimen Cappellen uber zenagst
+		<lb facs="#facs_335_r1l33" n="N004"/>Jeronimen Moser des oler haws und ligt mit dem hindern <del>gessle</del> tail in dem
+		<lb facs="#facs_335_r1l34" n="N005"/>Schilttergesslein das In von Hannsen Scharffenperger seinem vater seligen ist
+		<lb facs="#facs_335_r1l35" n="N006"/>anerstorben und angeerbt doch unvergriffen der iiᶜ tl. d. die dem Spital vor-
+		<lb facs="#facs_335_r1l36" n="N007"/>maln darauf verschriben sein <date>Actum feria secunda ante Lucie Anno etc. xxxviiᵐº</date>
+		<lb facs="#facs_335_r1l37" n="N008"/>Summa nulla propter priorem
+		<lb facs="#facs_335_r1l26" n="N009"/>vendidit purkrecht
+		<lb facs="#facs_335_r1l28" n="N010"/>auf dem ainen
+		<lb facs="#facs_335_r1l30" n="N011"/>drittail hauss
+		<lb facs="#facs_335_r1l32" n="N012"/>folio 141 libro C
+		<lb facs="#facs_335_r1l38" n="N013"/>Nota die zwen tail des vorgenant hauss hat der
+		<lb facs="#facs_335_r1l39" n="N014"/>Scharffenperger verkauft ainen tail Linharts Unger sneider
+		<lb facs="#facs_335_r1l40" n="N015"/>und den andern tail Kunczen dem vasczieher und den
+		<lb facs="#facs_335_r1l41" n="N016"/>drittail hat er Im vorbehalden und die genant cc
+		<lb facs="#facs_335_r1l42" n="N017"/>tl. gancz als den haus geledigt und derselb geltbrief
+		<lb facs="#facs_335_r1l43" n="N018"/>ist auch zesniten und ausgetan <del>und hat</del>
 	</p>
 </div>
 
